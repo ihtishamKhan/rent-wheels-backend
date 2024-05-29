@@ -11,7 +11,7 @@ connectDB();
 
 // Middleware
 var corsOptions = {
-    origin: ['http://localhost:3000', 'http://localhost:3001', 'https://rent-wheels-phi.vercel.app'],
+    origin: "*",
     optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));
